@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-users',
@@ -7,8 +7,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   imports: [
     CommonModule,
   ],
-  template: `<p>users works!</p>`,
+  templateUrl: `./users.component.html`,
   styleUrl: './users.component.css',
-  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class UsersComponent { }
